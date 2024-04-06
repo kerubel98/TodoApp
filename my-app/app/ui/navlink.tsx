@@ -19,7 +19,7 @@ export default function NavLinks() {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-col gap-2 py-2">
+    <div>
       {links.map((link) => {
         const LinkIcon = link.icon;
         return (
@@ -27,9 +27,9 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'flex h-[40px] gap-8 items-center rounded-md bg-gray-50 px-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:px-4',
+              'flex h-[40px] gap-8 items-center rounded-md px-3 text-sm font-medium hover:bg-blue-100 hover:text-sky-600 mb-6 ',
               {
-                'bg-sky-100 text-blue-600': pathname === link.href,
+                'bg-blue-100 text-blue-600': pathname === link.href,
               },
             )}
           >
