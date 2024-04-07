@@ -12,7 +12,7 @@ import clsx from 'clsx';
 
 const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
-  {name: 'Task manger', href: '/dashboard/invoices',icon: BoltIcon}, 
+  {name: 'Task manger', href: './ui/todo/tasksCard',icon: BoltIcon}, 
 ];
 
 export default function NavLinks() {
